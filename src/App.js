@@ -102,7 +102,7 @@ const Explorar = () => {
   return (
     <div className="container city-selector">
       <h1 style={{ fontSize: '2.8em', color: 'var(--primary)', fontWeight: 900, textShadow: '0 3px 12px rgba(0,0,0,0.18)' }}>Escolha um Distrito para Explorar</h1>
-      <p>Selecione um distrito para ver as cidades com pontos turísticos disponíveis.</p>
+      <p style={{ color: '#111', fontWeight: 'bold' }}>Selecione uma cidade para poder criar o seu proprio trajeto.</p>
       
       <select 
         onChange={(e) => setDistritoSelecionado(e.target.value)} 
@@ -250,7 +250,7 @@ const AppRoutes = () => (
 );
 
 const App = () => {
-  const [user, loading] = useAuthState(auth);
+  const [, loading] = useAuthState(auth);
   const [trajetoParaEditar, setTrajetoParaEditar] = useState(null);
   if (loading) return <Loading />;
   return (

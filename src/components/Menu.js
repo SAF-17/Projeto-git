@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 const Menu = () => {
     const navigate = useNavigate();
     const { role } = useUserRole();
-    const [user, loading] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const handleLogout = async () => {
         try {
@@ -29,7 +29,7 @@ const Menu = () => {
         <header className="menu">
             <div className="menu-title">TouriTrack</div>
             <nav className="menu-links">
-                <NavLink to="/" className="menu-item" end>Home</NavLink>
+                <NavLink to="/" className="menu-item" end>Início</NavLink>
                 <NavLink to="/mapa" className="menu-item">Mapa</NavLink>
                 
                 {/* Opções apenas para utilizadores autenticados */}
@@ -44,11 +44,11 @@ const Menu = () => {
                 <NavLink to="/sobre" className="menu-item">Sobre</NavLink>
                 
                 {/* Admin apenas para admins autenticados */}
-                {user && role === 'admin' && <NavLink to="/admin" className="menu-item">Admin</NavLink>}
+                {user && role === 'admin' && <NavLink to="/admin" className="menu-item">Administrador</NavLink>}
                 
                 {/* Botão de Login/Logout */}
                 {user ? (
-                    <button onClick={handleLogout} className="menu-item logout-btn">Logout</button>
+                    <button onClick={handleLogout} className="menu-item logout-btn">Sair</button>
                 ) : (
                     <button 
                         onClick={handleLogin} 
@@ -64,7 +64,7 @@ const Menu = () => {
                             transition: 'all 0.3s ease'
                         }}
                     >
-                        Login
+                        Entrar
                     </button>
                 )}
             </nav>

@@ -68,11 +68,6 @@ const AdicionarPonto = () => {
   const [cidade, setCidade] = useState('');
   const [showForm, setShowForm] = useState(false);
   const [showCityForm, setShowCityForm] = useState(false);
-  const [nome, setNome] = useState('');
-  const [latitude, setLatitude] = useState('');
-  const [longitude, setLongitude] = useState('');
-  const [descricao, setDescricao] = useState('');
-  const [imagem, setImagem] = useState('');
   
   // Estados para o novo formulário de cidade
   const [centerLat, setCenterLat] = useState('');
@@ -120,35 +115,6 @@ const AdicionarPonto = () => {
     } catch (error) {
       console.error("Erro ao criar a cidade:", error);
       toast.error("Ocorreu um erro ao criar a cidade.");
-    }
-  };
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const lat = parseFloat(latitude);
-    const lng = parseFloat(longitude);
-    if (isNaN(lat) || isNaN(lng)) {
-      toast.error('Latitude e longitude devem ser números válidos.');
-      return;
-    }
-    try {
-      const ponto = {
-        nome_ponto: nome,
-        coordenadas_ponto: new GeoPoint(lat, lng),
-        info_ponto: descricao,
-        img_link_ponto: imagem,
-      };
-      await adicionarPontoTuristico(ponto, distrito, cidade);
-      toast.success('Ponto turístico adicionado com sucesso!');
-      setNome('');
-      setLatitude('');
-      setLongitude('');
-      setDescricao('');
-      setImagem('');
-      setShowForm(false);
-    } catch (error) {
-      console.error('Erro ao adicionar ponto turístico: ', error);
-      toast.error('Erro ao adicionar ponto turístico: ' + (error && error.message ? error.message : error));
     }
   };
 

@@ -12,7 +12,6 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { useCity } from '../context/CityContext';
 import { Navigate, useLocation } from 'react-router-dom';
-import Loading from './Loading';
 import StarRating from './StarRating';
 
 const pinIcon = new L.Icon({

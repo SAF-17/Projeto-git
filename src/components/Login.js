@@ -79,7 +79,7 @@ const Login = () => {
   return (
     <div className="container" style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ background: '#fff', padding: 32, borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.1)', maxWidth: 370, width: '100%' }}>
-        <h2 style={{ textAlign: 'center', marginBottom: 24 }}>{isRegister ? 'Criar Conta' : 'Login'}</h2>
+        <h2 style={{ textAlign: 'center', marginBottom: 24 }}>{isRegister ? 'Criar Conta' : 'Entrar'}</h2>
         <form onSubmit={handleSubmit} style={{ marginBottom: 16 }}>
           <input
             type="email"
@@ -92,7 +92,7 @@ const Login = () => {
           />
           <input
             type="password"
-            placeholder="Senha"
+            placeholder="Palavra-passe"
             value={password}
             onChange={e => setPassword(e.target.value)}
             required
@@ -116,7 +116,7 @@ const Login = () => {
         </button>
         <div style={{ textAlign: 'center', marginTop: 8 }}>
           <span style={{ fontSize: 14 }}>
-            {isRegister ? 'Já tem conta?' : 'Não tem conta?'}{' '}
+            {isRegister ? 'Já tem conta?' : 'Ainda não tem conta?'}{' '}
             <button
               type="button"
               onClick={() => { setIsRegister(!isRegister); setError(''); }}

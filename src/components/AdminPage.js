@@ -36,7 +36,7 @@ const AdminPage = () => {
   return (
     <div className="admin-container">
       <aside className="admin-sidebar">
-        <h2>Painel de Admin</h2>
+        <h2>Painel de Administrador</h2>
         <nav>
           <button
             className={activeTab === 'approvePoints' ? 'active' : ''}

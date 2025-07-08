@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+\chapter{Conclusões e Trabalho Futuro}
+\section{Conclusões Finais}
+O desenvolvimento do TouriTrack permitiu responder a uma necessidade real no contexto do turismo urbano, oferecendo uma solução inovadora, intuitiva e centrada no utilizador. Ao longo deste projeto, foi possível identificar e colmatar lacunas presentes nas principais aplicações do mercado, nomeadamente ao nível da personalização de trajetos, interatividade, contributo colaborativo e gestão eficiente de conteúdos.
+
+A aplicação desenvolvida distingue-se pela capacidade de gerar percursos turísticos otimizados com base nas preferências do utilizador, pela integração de funcionalidades de feedback e partilha, e por um painel administrativo robusto que assegura a qualidade da informação disponibilizada. O recurso a tecnologias modernas, como React, Firebase e OSRM, garantiu uma base sólida, escalável e preparada para futuras evoluções.
+
+Para além dos resultados técnicos, este projeto proporcionou um enriquecimento significativo em termos de competências de engenharia de software, desde a análise de requisitos à implementação, testes e validação. A experiência adquirida será certamente valiosa para desafios futuros, tanto académicos como profissionais.
+
+\section{Melhorias Futuras}
+Apesar dos objetivos alcançados, reconhecem-se oportunidades de evolução que poderão potenciar ainda mais o impacto do TouriTrack:
+
+\begin{itemize}
+    \item Implementação de suporte offline (PWA), permitindo a utilização da aplicação sem ligação à internet;
+    \item Internacionalização, com suporte a múltiplos idiomas para abranger um público mais vasto;
+    \item Integração com plataformas externas de turismo, como TripAdvisor, para enriquecer a experiência do utilizador;
+    \item Desenvolvimento de testes automáticos e recolha de métricas de utilização para melhoria contínua;
+    \item Criação de um fórum de comunidade, promovendo a partilha de experiências e sugestões entre utilizadores;
+    \item Exploração de funcionalidades baseadas em inteligência artificial, como recomendações personalizadas e assistentes virtuais.
+\end{itemize}
+
+Em suma, o TouriTrack encontra-se numa fase sólida e funcional, pronto para ser expandido e adaptado às exigências de um setor em constante evolução. O projeto demonstra o potencial da tecnologia para transformar a experiência turística, colocando o utilizador no centro do processo de descoberta e valorizando o contributo da comunidade.
